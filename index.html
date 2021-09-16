@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+    <head>
+        <title>shareonce</title>
+        <meta content="text/html">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sjcl/1.0.8/sjcl.min.js"></script>
+        <script type="text/javascript" src="/share.js"></script>
+    </head>
+
+    <body onload="onLoad()" style="margin: 10pt">
+        <form id="input" onsubmit="return shareEncrypt()">
+            <textArea id="rawText" cols="40" rows="10"></textArea><br/>
+            <input type="submit" value="create one time link"/>
+        </form>
+        <span id="shareLink"></span>
+    </body>
+</html>
